@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { MdVisibility, MdVisibilityOff } from "react-icons/md";
 import { Link, useNavigate } from "react-router";
 import { useFetch } from "../hooks/useFetch";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import * as THREE from "three";
@@ -37,11 +37,13 @@ const Login = () => {
     };
   }, [vantaEffect]);
 
-  const loginUser = async (dataForm) => {
-    const url = `${import.meta.env.VITE_BACKEND_URL}/veterinario/login`;
-    const response = await fetchDataBackend(url, dataForm, "POST");
-    if (response) navigate("/dashboard");
-  };
+  const loginUser = async(dataForm) => {
+        const url = `${import.meta.env.VITE_BACKEND_URL}/veterinario/login`
+        const response = await fetchDataBackend(url, dataForm,'POST')
+        if(response){
+            navigate('/dashboard')
+        }
+    }
 
   return (
     <div
