@@ -15,11 +15,6 @@ Una aplicación web para simular entrevistas de trabajo mediante inteligencia ar
 - [Tecnologías](#tecnologías)  
 - [Arquitectura](#arquitectura)  
 - [Instalación](#instalación)  
-- [Uso](#uso)  
-- [Estructura del proyecto](#estructura-del-proyecto)  
-- [Contribuciones](#contribuciones)  
-- [Licencia](#licencia)  
-- [Autores](#autores)  
 
 ---
 
@@ -80,3 +75,4 @@ El proyecto está compuesto por dos partes:
 ```bash
 git clone https://github.com/Josselyn-Ayo/Entrevistas.git
 cd Entrevistas
+
